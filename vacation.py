@@ -1,25 +1,27 @@
-def hotel_cost(nights): 
-    cost = 140 * nights
-    return cost
-    
-def plane_ride_cost(location):
-    if location.lower() == "charlotte":
-        return 183
-    elif location.lower() == "tampa":
-        return 220
-    elif location.lower() == "pittsburgh":
+def hotel_cost(nights):
+    return nights * 140
+
+def plane_ride_cost(city):
+    if city == "Charlotte":
+        return 183 
+    elif city == "Tampa":
+        return 220 
+    elif city == "Pittsburgh": 
         return 222
-    else:
+    elif city == "Los Angeles":
         return 475
-    
-def rental_car_cost(rental_days):
-    if rental_days <3:
-        return 40 * rental_days
-    elif rental_days < 7:
-        return 40 * rental_days - 20
-    else:
-        return 40 * rental_days - 50
-        
-def trip_cost(city,days,spending_money):
-    trip_cost = plane_ride_cost(city) +  rental_car_cost(days) + hotel_cost(days) + spending_money
-    return trip_cost
+
+def rental_car_cost(days):
+    cost = days * 40
+    if days >= 7:
+        cost = cost - 50
+    elif days >= 3:
+        cost = cost - 20
+    return cost 
+
+def trip_cost(city, days, spending_money):
+    return rental_car_cost(days) + hotel_cost(days) + plane_ride_cost(city) + spending_money
+
+# You were planning on taking a trip to LA
+# for five days with $600 of spending money.
+print 2734.23 - trip_cost("Los Angeles", 5, 600)
