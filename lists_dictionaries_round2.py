@@ -114,10 +114,7 @@ print total
 
 ######part 10/13
 
-
-
-###part 11/13
-
+groceries = ["banana", "orange", "apple"]
 
 
 ####part 12/13
