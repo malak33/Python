@@ -92,9 +92,27 @@ for x in prices:
 
 ####part 9/13
 
+xs = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+    
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
 
+total=0
+for x in prices and stock:
+    add = prices[x] * stock[x]
+    total = total + add
+print total
 
-####part 10/13
+######part 10/13
 
 
 
