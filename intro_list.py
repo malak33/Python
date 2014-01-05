@@ -122,7 +122,7 @@ print zoo_animals
 
 
 ####13/13
-inventory = {'gold' : 500,
+nventory = {'gold' : 500,
 'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
 'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']}
 
@@ -134,12 +134,8 @@ inventory['pouch'].sort()
 # Here the dictionary access expression takes the place of a list name 
 
 # Your code here
-inventory = {'pocket' : ['seashell', 'strange berry', 'lint']}
-backpack.sort()
-print backpack
-backpack.remove('dagger')
-inventory.append(500 + 50)
-
-
-
+inventory['pocket'] = ['seashell', 'strange berry', 'lint']
+inventory['backpack'].sort()
+inventory['backpack'].remove('dagger')
+inventory['gold'] = inventory['gold'] + 50
 
