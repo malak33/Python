@@ -1,9 +1,8 @@
 ### part 1/9
 
-lloyd = {"name" : "llyod", "homework" : [], "quizzes" : [], "test" : []}
-alice = {"name" : "alice", "homework" : [], "quizzes" : [], "test" : []}
-tyler = {"name" : "tyler", "homework" : [], "quizzes" : [], "test" : []}
-
+lloyd = {"name" : "Lloyd", "homework" : [], "quizzes" : [], "tests" : []}
+alice = {"name" : "Alice", "homework" : [], "quizzes" : [], "tests" : []}
+tyler = {"name" : "Tyler", "homework" : [], "quizzes" : [], "tests" : []}
 
 
 ###part 2/9
