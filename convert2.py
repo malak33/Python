@@ -8,7 +8,7 @@ def main():
 
     # Print warnings for extreme temps
     if fahrenheit > 90:
-        print("It's really ot out there. Be careful!")
+        print("It's really hot out there. Be careful!")
     if fahrenheit < 30:
         print("Brrrrr. Be sure to dress warmly!")
 main()
