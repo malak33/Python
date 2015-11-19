@@ -1,3 +1,6 @@
+#! /usr/bin/python3
+# createNamedTuple.py - below will create a named tuple
+
 from collections import namedtuple
 
 Contact = namedtuple('ContactRecord', 'first last age email')
